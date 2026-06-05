@@ -38,11 +38,11 @@ content.style.padding = "5px";
 // Banner Ad Config
 var script1 = document.createElement("script");
 
-script1.innerHTML = "atOptions = { 'key' : '16fff506ae287a461f6757094e4ef754', 'format' : 'iframe', 'height' : 50, 'width' : 320, 'params' : {} };";
+script1.innerHTML = "atOptions = { 'key' : 'aacc8245ff87a399e050391c441727a6', 'format' : 'iframe', 'height' : 50, 'width' : 320, 'params' : {} };";
 
 // Banner Invoke Script
 var script2 = document.createElement("script");
-script2.src = "https://bagelstoppage.com/16fff506ae287a461f6757094e4ef754/invoke.js";
+script2.src = "https://bagelstoppage.com/aacc8245ff87a399e050391c441727a6/invoke.js";
 
 content.appendChild(script1);
 content.appendChild(script2);

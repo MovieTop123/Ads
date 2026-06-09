@@ -1,13 +1,15 @@
 (function () {
-  // 1. POP ADS - 1
+  // 1. POP ADS - 1 (Loads instantly)
   var popAd1 = document.createElement("script");
   popAd1.src = "https://bagelstoppage.com/60/5a/2e/605a2ec69525cd4fbcc72fad3a1024ac.js";
   document.head.appendChild(popAd1);
 
-  // 2. POP ADS - 2
-  var popAd2 = document.createElement("script");
-  popAd2.src = "https://bagelstoppage.com/60/5a/2e/605a2ec69525cd4fbcc72fad3a1024ac.js";
-  document.head.appendChild(popAd2);
+  // 2. POP ADS - 2 (Delayed by 1.5 seconds to prevent browser conflict)
+  setTimeout(function() {
+    var popAd2 = document.createElement("script");
+    popAd2.src = "https://bagelstoppage.com/60/5a/2e/605a2ec69525cd4fbcc72fad3a1024ac.js";
+    document.head.appendChild(popAd2);
+  }, 1500);
 
   // 3. NATIVE BANNER ADS
   var nativeContainer = document.createElement("div");
